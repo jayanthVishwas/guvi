@@ -1,5 +1,5 @@
 html, body{
-  margin: 50px 100px;
+  margin: 3% 7%;
   padding: 10px;
 }
 
@@ -15,7 +15,31 @@ html, body{
   z-index: 11;
 }
 
-
+.outline{
+  border-style: solid;
+  border-color: white;
+  height: 535%;
+  width: 67%;
+  position: absolute;
+  right: 16.5%;
+  top:150px;
+  z-index: 12;
+}
+.absolutePos {
+    position: absolute;
+    color: white;
+    padding: 0px 20px;
+    background-color: black;
+    top: 127px;
+    left: 45%;
+    display: inline-block;
+    text-align: center;
+    font-weight:300;
+    font-family:monospace;
+    letter-spacing: 1px;
+    z-index: 13;
+    border-radius: 10px;
+}
 .cus-div{
   width:100%;
   position:relative;
