@@ -23,7 +23,7 @@ html, body{
   position: absolute;
   right: 16.5%;
   top:150px;
-  z-index: 12;
+  z-index: 15;
 }
 .absolutePos {
     position: absolute;
@@ -37,7 +37,7 @@ html, body{
     font-weight:300;
     font-family:monospace;
     letter-spacing: 1px;
-    z-index: 13;
+    z-index: 16;
     border-radius: 10px;
 }
 .cus-div{
@@ -81,7 +81,7 @@ html, body{
 
 #skew7{
   background: black;
-  z-index: 4;
+  z-index: 17;
 }
 
 .cus-div::after{
@@ -102,10 +102,9 @@ html, body{
 }
 
 
-
 #skew2::after,
 #skew4::after,
 #skew6::after{
-  transform-origin: left bottom;
-  transform: skewY(3deg);
+  transform-origin: right bottom;
+  transform: skewY(-3deg);
 }
