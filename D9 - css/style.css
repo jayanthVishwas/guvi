@@ -27,9 +27,9 @@ html, body{
 }
 .absolutePos {
     position: absolute;
-    color: white;
+    color: black;
     padding: 0px 20px;
-    background-color: black;
+    background-color: #f6f6f6;
     top: 127px;
     left: 45%;
     display: inline-block;
