@@ -1,0 +1,77 @@
+html, body{
+  margin: 50px;
+  background-color: white;
+  padding: 1px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Abril Fatface', cursive;
+}
+p,a{
+  font-family: 'EB Garamond', serif;
+  text-align: justify;
+}
+.imgTop{
+  padding: 10px;
+  background-color:#e8e8e8;
+  text-align:justify;
+
+  width: 80%;
+}
+.block{
+  float:left;
+  margin-right:10px;
+  width:70%;
+}
+.heading{
+  padding-top: 30px;
+}
+.title{
+  text-align: center;
+  font-size: 4rem;
+}
+
+.first{
+  text-align: justify;
+}
+.Img1{
+  width: 100%;
+}
+
+.secImg{
+  width: 25%;
+  float: left;
+  margin-right: 10px;
+}
+
+.third-Img{
+  width: 25%;
+  float:left;
+  margin-right:10px;
+}
+
+
+.col2-Img{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  }
+
+.col2-sec{
+  border-style: solid;
+  padding: 20px;
+  border-color: #e8e8e8;
+}
+
+.foot{
+  background-color: #050505;
+  margin-top: 5px;
+  color: white;
+  text-align: right;
+}
+
+/* page2.html */
+
+.second-half{
+  margin-top: 20px;
+}
