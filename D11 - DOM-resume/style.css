@@ -1,0 +1,84 @@
+.heading {
+  height: 250px;
+  background-color: grey;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading-bar {
+  height: 30px;
+  background-color: white;
+  top: 100px;
+  position: relative;
+}
+
+.name-bar {
+  height: auto;
+  width: 50%;
+  background-color: gold;
+  font-size: 1.5REM;
+  margin: auto;
+  top: 20px;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  }
+
+.contact {
+  position:relative;
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.resume-sections{
+  text-align:justify;
+  margin: auto;
+
+  width: 80%;
+}
+
+.first{
+  float: left;
+}
+
+.second{
+text-align: right;
+}
+
+.icons{
+  color: gold;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 330px;
+}

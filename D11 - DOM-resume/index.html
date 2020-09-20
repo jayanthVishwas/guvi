@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    //header
+    let heading = document.createElement("div")
+    heading.setAttribute("class", "heading")
+    let headBar = document.createElement("div")
+    headBar.setAttribute("class", "heading-bar")
+
+    let nameBar = document.createElement("div")
+    nameBar.setAttribute("class", "name-bar")
+    let name = document.createElement("h1")
+    name.innerHTML = "JAYANTH VISHWAS"
+
+    nameBar.append(name)
+    heading.append(headBar)
+    heading.append(nameBar)
+
+    document.body.append(heading)
+
+    let contact = document.createElement("div")
+    contact.innerHTML = "Bangalore | 999-999-9999 | vishwasjayanth@gmail.com"
+    contact.setAttribute("class", "contact")
+    document.body.append(contact)
+
+    let hr = document.createElement("hr")
+    document.body.append(hr)
+
+    //resume sections
+
+    let main = document.createElement("div")
+    main.setAttribute("class", "row")
+    let colLeft = document.createElement("div")
+    colLeft.setAttribute("class", "column left")
+
+    //Profile
+    let profileDiv = document.createElement("div")
+    profileDiv.setAttribute("class", "resume-sections")
+    let profileName = document.createElement("h1")
+    profileName.innerHTML = '<i class="fas fa-user-circle icons"></i> Profile'
+    let profilePara = document.createElement("p")
+    profilePara.innerHTML = "Dedicated and efficient full stack developer with 1+ years experience in application layers, presentation layers, and databases."
+
+
+    profileDiv.append(profileName)
+    profileDiv.append(profilePara)
+    colLeft.append(profileDiv)
+
+    //Skills
+    let skillsDiv = document.createElement("div")
+    skillsDiv.setAttribute("class", "resume-sections")
+    let skillsName = document.createElement("h1")
+    skillsName.innerHTML = '<i class="fas fa-code icons"></i> Skills'
+
+    let table = document.createElement("table")
+
+    let row1 = document.createElement("tr")
+    let td11 = document.createElement("td")
+    td11.innerHTML = "Javascript"
+    let td12 = document.createElement("td")
+    td12.innerHTML = '<progress value="70" max="100">70%</progress>'
+
+    row1.append(td11)
+    row1.append(td12)
+    table.append(row1)
+
+    let row2 = document.createElement("tr")
+    let td21 = document.createElement("td")
+    td21.innerHTML = "HTML"
+    let td22 = document.createElement("td")
+    td22.innerHTML = '<progress value="70" max="100">70%</progress>'
+
+    row2.append(td21)
+    row2.append(td22)
+    table.append(row2)
+
+
+    let row3 = document.createElement("tr")
+    let td31 = document.createElement("td")
+    td31.innerHTML = "CSS"
+    let td32 = document.createElement("td")
+    td32.innerHTML = '<progress value="70" max="100">70%</progress>'
+
+    row3.append(td31)
+    row3.append(td32)
+    table.append(row3)
+
+    let row4 = document.createElement("tr")
+    let td41 = document.createElement("td")
+    td41.innerHTML = "Python"
+    let td42 = document.createElement("td")
+    td42.innerHTML = '<progress value="60" max="100">60%</progress>'
+
+    row4.append(td41)
+    row4.append(td42)
+    table.append(row4)
+
+    skillsDiv.append(skillsName)
+    skillsDiv.append(table)
+    colLeft.append(skillsDiv)
+
+    //experience
+    let expDiv = document.createElement("div")
+    expDiv.setAttribute("class", "resume-sections")
+    let expName = document.createElement("h1")
+    expName.innerHTML = '<i class="fas fa-briefcase icons"></i> Work Experience'
+    let exp1Div = document.createElement("div")
+    exp1Div.setAttribute("class", "first")
+    exp1Div.innerHTML = '<b>Software Engineer, Honeywell Technology Solutions</b>'
+
+    let desc1Div = document.createElement("div")
+    desc1Div.setAttribute("class", "second")
+    desc1Div.innerHTML = "June-2017 to Mar-2019"
+    let ul1 = document.createElement("ul")
+    let li1 = document.createElement("li")
+    li1.innerHTML ="Developed face recognition solution for Honeywell’s Video Analytics. My work included experimenting with various libraries and training them with numerous images of peoples face. I had used pre-trained models from various companies and compare its accuracy which involved testing under different lighting conditions. Apart from this I had worked on skin color detection required to mask people face for General Data Protection Regulation."
+
+
+
+    expDiv.append(expName)
+    expDiv.append(exp1Div)
+    expDiv.append(desc1Div)
+
+    expDiv.append(ul1)
+    ul1.append(li1)
+    colLeft.append(expDiv)
+
+    //col right
+
+    let colRight = document.createElement("div")
+    colRight.setAttribute("class","column right")
+    let divInside = document.createElement("div")
+    divInside.setAttribute("class","resume-sections")
+
+    let heading1 = document.createElement("h1")
+    heading1.innerHTML='<i class="fas fa-briefcase icons"></i> Work Experience'
+    let titleDiv = document.createElement("div")
+    titleDiv.setAttribute("class","first")
+    titleDiv.innerHTML = '<b>Software Engineer, Honeywell Technology Solutions</b>'
+
+    let desc2div = document.createElement("div")
+    desc2div.setAttribute("class","second")
+    desc2div.innerHTML="June-2017 to Mar-2019"
+
+    let ul2 = document.createElement("ul")
+    let li2 = document.createElement("li")
+    li2.innerHTML = "Worked as a software developer for Avionics applications which are used for simulating test cases like flying, landing, and communication between ground station and aircraft. Worked on Test Document automation Application which eliminated thousands of hours of manual work involving preparing test reports. Implemented sentimental analysis using NLTK library, which tells the overall tone of the report generated. Used textBlob to show the percentage of positive, negative and neutral responses from the reviewers. The application improved the cycle time by 50% and reduced their manual Non-engineering efforts by 80% which saved 50k/year."
+
+    divInside.append(heading1)
+    divInside.append(titleDiv)
+    divInside.append(desc2div)
+    divInside.append(ul2)
+    ul2.append(li2)
+
+
+    //Education
+    let eduDiv = document.createElement("div")
+    eduDiv.setAttribute("class","resume-sections")
+    let eduHeading = document.createElement("h1")
+    eduHeading.innerHTML='<i class="fas fa-university icons"></i> Education'
+
+    let eduNameDiv = document.createElement("div")
+    eduNameDiv.setAttribute("class","first")
+    eduNameDiv.innerHTML="<b>BMS College of Engineering</b>"
+    let edudateDiv = document.createElement("div")
+    edudateDiv.setAttribute("class","second")
+    edudateDiv.innerHTML="June-2013 to June-2017"
+
+    let ul3 = document.createElement("ul")
+    let li3 = document.createElement("li")
+    li3.innerHTML="SoC Peripheral Design – Timers and Counters with parameterized Frequency Underwent the final year project guided by Dr Kiran Beiley, Professor in BMSCE, this project aims at designing a SoC Peripherals – Timers and Counters with parameterized Frequency. Verification and Validation was completed in FPGA Environment. The Design was used to demonstrate Traffic Life Controlling by combining Virtuoso FPGA board with Arduino Board."
+
+    eduDiv.append(eduHeading)
+    eduDiv.append(eduNameDiv)
+    eduDiv.append(edudateDiv)
+    eduDiv.append(ul3)
+    ul3.append(li3)
+
+    colRight.append(divInside)
+    colRight.append(eduDiv)
+    main.append(colLeft)
+    main.append(colRight)
+    document.body.append(main)
+  </script>
+</body>
+
+</html>
