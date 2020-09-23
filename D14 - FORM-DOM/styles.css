@@ -1,5 +1,42 @@
+body{
+  padding: 50px;
+}
 .mainDiv{
-  width: 700px;
+  width: 450px;
   height: 600px;
   background-color: #e8e8e8;
+}
+
+.tb{
+
+}
+
+.first{
+
+  /* width: 600px;
+  height: 600px; */
+  position: absolute;
+  left: 600px;
+
+}
+
+td,th{
+
+  background-color: white;
+}
+
+label{
+  margin-left: 20px;
+  margin-right: 100px;
+}
+
+#btn1{
+  margin-left: 300px;
+
+}
+
+.button-div{
+  position: absolute;
+  top:450px;
+  left: -60px;
 }
