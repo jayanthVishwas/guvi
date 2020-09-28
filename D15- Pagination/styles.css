@@ -1,0 +1,61 @@
+th,
+td {
+    height: 30px;
+    vertical-align: center;
+    text-align: center;
+    padding: 10px;
+    width: 5%;
+    border-bottom: 1px solid;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+th {
+    font-size: 24px;
+    padding: 8px;
+}
+
+.dataTable {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+tr:nth-child(even) {
+    background: white;
+}
+
+thead tr {
+    background: white;
+    color: black;
+}
+
+.heading {
+    font-size: 32px;
+    font-family:monospace;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.anchorlist {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.anchorlist a {
+    color: blue;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.anchorlist a:hover {
+    background: #e8e8e8;
+}
