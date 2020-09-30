@@ -1,5 +1,8 @@
 .div1{
   text-align: center;
-  margin-top: 300px;
-  font-size: 3rem;
+  margin-top: 200px;
+  font-size: 2rem;
+  background-color: #011F3F;
+  height: 200px;
+  padding: 50px;
 }

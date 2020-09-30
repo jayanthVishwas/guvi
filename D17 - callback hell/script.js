@@ -1,10 +1,10 @@
 let h1 = document.querySelector("h1")
-
-
+// document.body.style.backgroundColor="#011F3F"
+h1.style.color="#FEF2BF"
 
 setTimeout(function() {
   h1.innerHTML = "10"
-  
+
   setTimeout(function() {
     h1.innerHTML = "9"
 
