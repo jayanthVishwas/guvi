@@ -20,10 +20,12 @@ let promise = new Promise(function(resolve, reject) {
 })
 
 promise.then(function(data){
-console.log(getDetails(data))
+getDetails(data)
 
 })
-
+.catch(function(err) {
+    console.log(err);
+});
 
 function getDetails(data){
 console.log(data)
