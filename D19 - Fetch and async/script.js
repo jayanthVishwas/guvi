@@ -89,17 +89,22 @@ function createCards(dict) {
 
 
   button.onclick= async function(){
-
-    let response = await fetch("http://api.openweathermap.org/data/2.5/weather?q="+dict.name + "&appid=016a51d1d7c6d1ad566fc5a8139d771e")
-    let data
-    if (response.ok) {
-      data = await response.json();
-      climate.innerHTML = "Climate: " +(data.main.temp-273.15).toFixed(2) + "°C, "+ data.weather[0].description
-    } else {
-      console.log("HTTP-Error: " + response.status);
-      climate.innerHTML="Climate data not available"
-      return
+    try{
+      let response = await fetch("https://api.openweathermap.org/data/2.5/weather?q="+dict.name + "&appid=016a51d1d7c6d1ad566fc5a8139d771e")
+      let data
+      if (response.ok) {
+        data = await response.json();
+        climate.innerHTML = "Climate: " +(data.main.temp-273.15).toFixed(2) + "°C, "+ data.weather[0].description
+      } else {
+        console.log("HTTP-Error: " + response.status);
+        climate.innerHTML="Climate data not available"
+        return
+      }
     }
+    catch(err){
+      console.log(err)
+    }
+
 
   }
   button.setAttribute("class","btn btn-outline-dark")
